@@ -36,5 +36,5 @@ jobs:
           file: build/libs/*.jar
           file_glob: true
           asset_name: ${{ github.event.repository.name }}
-          tag: 2.0
+          tag: latest-2.0
           overwrite: true
