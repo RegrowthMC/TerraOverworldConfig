@@ -326,11 +326,11 @@ spawn-island-origin-z: 0
 # The y coordinate of the center of the spawn island.
 # Default: 0
 
-spawn-island-radius-inner: 20
+spawn-island-radius-inner: 300
 # Radius in blocks from origin where the continental value is set to 1, i.e inland.
 # Default: 20
 
-spawn-island-radius-middle: 125
+spawn-island-radius-middle: 500
 # Radius in blocks from origin where the continental value is set to 0, i.e where
 # the coast of the spawn island is is.
 # Default: 125
