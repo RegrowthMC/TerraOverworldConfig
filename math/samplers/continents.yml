@@ -4,7 +4,7 @@ samplers:
     type: EXPRESSION
     expression: |
       max(
-        max(
+        min(
           sampler(x / scale / globalScale, z / scale / globalScale) * spread + offset,
           -spawnIsland(x, z)
         ),
