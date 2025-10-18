@@ -1,0 +1,39 @@
+name: Create Release on Push
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - "2.0"
+
+jobs:
+  create_release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'adopt'
+          java-version: '21'
+
+      - name: Zip Contents
+        run: |
+          zip -r overworld-2.0.zip . -x "*.git*" "*.github*" "*.scripts/*" "*.wiki/*"
+
+      - name: Post GitHub Release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: overworld-2.0.zip
+          file_glob: true
+          asset_name: ${{ github.event.repository.name }}
+          tag: latest-2.0
+          overwrite: true

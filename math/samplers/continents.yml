@@ -4,9 +4,9 @@ samplers:
     type: EXPRESSION
     expression: |
       max(
-        max(
-          -sampler(x / scale / globalScale, z / scale / globalScale) * spread + offset,
-          spawnIsland(x, z)
+        min(
+          sampler(x / scale / globalScale, z / scale / globalScale) * spread + offset,
+          -spawnIsland(x, z)
         ),
         // Set continentalness to spotContinentalFactor in center of spots, 0 on spot edges,
         // and decrease quadratically moving further outwards
