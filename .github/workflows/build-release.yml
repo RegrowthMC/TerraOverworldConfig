@@ -6,7 +6,7 @@ permissions:
 on:
   push:
     branches:
-      - "2.0"
+      - "main"
 
 jobs:
   create_release:
@@ -26,14 +26,14 @@ jobs:
 
       - name: Zip Contents
         run: |
-          zip -r overworld-2.0.zip . -x "*.git*" "*.github*" "*.scripts/*" "*.wiki/*"
+          zip -r overworld.zip . -x "*.git*" "*.github*" "*.scripts/*" "*.wiki/*"
 
       - name: Post GitHub Release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: overworld-2.0.zip
+          file: overworld.zip
           file_glob: true
           asset_name: ${{ github.event.repository.name }}
-          tag: latest-2.0
+          tag: latest
           overwrite: true
