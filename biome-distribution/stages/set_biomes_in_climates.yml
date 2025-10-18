@@ -11,17 +11,19 @@ stages:
       - LAND_GLACIER: 1
     to:
       ice-cap:
-        - LAND_GLACIER: 1
+        - LAND_GLACIER: 2
         - SNOWY_TUFF_MOUNTAINS: 1
       ice-cap-highlands:
-        - SNOWY_BLACKSTONE_MOUNTAINS: 1
+        - SNOWY_BLACKSTONE_MOUNTAINS: 2
+        - ICE_CAPS: 4
 
       tundra-flat:
         - TUNDRA: 1
       tundra:
         - TUNDRA: 1
-      tundra-highlands:
         - SNOWY_TUFF_MOUNTAINS: 1
+      tundra-highlands:
+        - SNOWY_BLACKSTONE_MOUNTAINS: 1
 
       polar-coast-flat:
         - FROZEN_BEACH: 1
@@ -34,10 +36,10 @@ stages:
         - COLD_DESERT_MESA: 1
 
       polar-crater-lake:
-        - todo: 1
+        - COLD_CRATER_LAKE: 1
 
       polar-extinct-volcano:
-        - todo: 1
+        - COLD_EXTINCT_VOLCANO: 1
 
       polar-shallow-ocean:
         - FROZEN_OCEAN: 1
@@ -173,10 +175,10 @@ stages:
         - BOREAL_MESA: 1
 
       boreal-crater-lake:
-        - todo: 1
+        - BOREAL_CRATER_LAKE: 1
 
       boreal-extinct-volcano:
-        - todo: 1
+        - BOREAL_EXTINCT_VOLCANO: 1
 
       boreal-shallow-ocean:
         - KELP_FOREST_GRAVEL: 1
@@ -197,6 +199,7 @@ stages:
       temperate-hot-dry:
         - CHAPARRAL: 1
         - MOORLAND: 1
+        - PALM_FOREST: 1
       temperate-hot-dry-highlands:
         - DRY_TEMPERATE_MOUNTAINS: 1
         - DRY_TEMPERATE_WHITE_MOUNTAINS: 1
@@ -208,13 +211,14 @@ stages:
       temperate-warm-dry:
         - CHAPARRAL: 1
         - MOORLAND: 1
+        - PALM_FOREST: 1
       temperate-warm-dry-highlands:
         - DRY_TEMPERATE_MOUNTAINS: 1
         - DRY_TEMPERATE_WHITE_MOUNTAINS: 1
 
       temperate-hot-flat:
         - MOORLAND: 1
-        - ALIEN_MARSH: 1
+        - PALM_FOREST: 1
         - TEMPERATE_RAINFOREST: 1
         - ROCKY_GRASSLAND: 1
         - OAK_FOREST: 1
@@ -356,33 +360,33 @@ stages:
 
       # Red hot steppe
       hot-steppe-flat-red:
-        - XERIC_SHRUBLAND: 1
+        - RED_XERIC_SHRUBLAND: 1
       hot-steppe-red:
-        - XERIC_SHRUBLAND: 1
+        - RED_XERIC_SHRUBLAND: 1
       hot-steppe-highlands-red:
-        - XERIC_MOUNTAINS: 1
+        - RED_XERIC_MOUNTAINS: 1
 
       # Orange hot steppe
       hot-steppe-flat-orange:
-        - XERIC_SHRUBLAND: 1
-        - PALM_FOREST: 1
+        - ORANGE_XERIC_SHRUBLAND: 1
+        - ORANGE_DRY_PALM_FOREST: 1
       hot-steppe-orange:
-        - XERIC_SHRUBLAND: 1
-        - PALM_FOREST: 1
+        - ORANGE_XERIC_SHRUBLAND: 1
+        - ORANGE_DRY_PALM_FOREST: 1
       hot-steppe-highlands-orange:
-        - XERIC_MOUNTAINS: 1
-        - PALM_FOREST: 1
+        - ORANGE_XERIC_MOUNTAINS: 1
+        - ORANGE_DRY_PALM_FOREST: 1
 
       # White hot steppe
       hot-steppe-flat-white:
         - XERIC_SHRUBLAND: 1
         - TAR_PITS: 1
-        - PALM_FOREST: 1
+        - DRY_PALM_FOREST: 1
         - FIRMIHIN_FOREST: 1
       hot-steppe-white:
         - XERIC_SHRUBLAND: 1
         - TAR_PITS: 1
-        - PALM_FOREST: 1
+        - DRY_PALM_FOREST: 1
         - FIRMIHIN_FOREST: 1
       hot-steppe-highlands-white:
         - XERIC_MOUNTAINS: 1
@@ -401,10 +405,10 @@ stages:
       cold-desert-flat:
         - SALT_FLATS: 1
       cold-desert:
-        - SNOWY_DUNES: 1
+        - SNOWY_DUNES: 2
         - SNOWY_BADLANDS: 1
       cold-desert-highlands:
-        - SNOWY_MOUNTAINS: 1
+        - SNOWY_MOUNTAINS: 2
         - SNOWY_BADLANDS: 1
 
       cold-steppe-flat:
@@ -420,13 +424,12 @@ stages:
         - COLD_DESERT_MESA: 1
 
       cold-desert-crater-lake:
-        - todo: 1
+        - COLD_CRATER_LAKE: 1
 
       cold-desert-extinct-volcano:
-        - todo: 1
+        - COLD_EXTINCT_VOLCANO: 1
 
       arid-coast-flat:
-        - BLACK_SAND_BEACH: 1
         - BEACH: 1
       arid-coast:
         - SANDSTONE_ARCHIPELAGO: 1
@@ -437,19 +440,19 @@ stages:
         - DESERT_MESA: 1
 
       desert-crater-lake:
-        - todo: 1
+        - DESERT_CRATER_LAKE: 1
 
       desert-extinct-volcano:
-        - todo: 1
+        - DESERT_EXTINCT_VOLCANO: 1
 
       tropical-rainforest-flat:
         - BAMBOO_JUNGLE: 1
         - JUNGLE: 1
         - ROCKY_JUNGLE: 1
         - TROPICAL_RAINFOREST: 1
+        - TROPICAL_FLOODPLAIN: 1
       tropical-rainforest:
         - BAMBOO_JUNGLE: 1
-        - TROPICAL_FLOODPLAIN: 1
         - OVERGROWN_CLIFFS: 1
         - CLOUD_FOREST: 1
         - TROPICAL_RAINFOREST: 1
@@ -490,7 +493,6 @@ stages:
 
       tropical-coast-flat:
         - MUDDY_COASTS: 1
-        - MANGROVE_SWAMP: 1
         - PALM_BEACH: 1
       tropical-coast: LUSH_SEA_CAVES
       tropical-coast-highlands: LUSH_SEA_CAVES
@@ -499,10 +501,10 @@ stages:
         - TROPICAL_MESA: 1
 
       tropical-crater-lake:
-        - todo: 1
+        - TROPICAL_CRATER_LAKE: 1
 
       tropical-extinct-volcano:
-        - todo: 1
+        - TROPICAL_EXTINCT_VOLCANO: 1
 
       hot-shallow-ocean:
         - SHALLOW_CORAL_OCEAN: 1

@@ -10,13 +10,12 @@ color: $biomes/colors.yml:DRYBRUSH
 
 tags:
   - LAND_CAVES
-  - USE_RIVER
+  - USE_DESERT_RIVER
 
 vanilla: minecraft:savanna
 
 palette:
   - SANDY_GRASS: $meta.yml:top-y
-  - << meta.yml:palette-ocean-level-sand
   - << meta.yml:palette-underwater
   - << meta.yml:palette-bottom
 

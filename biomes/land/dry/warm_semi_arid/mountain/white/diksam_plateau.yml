@@ -1,26 +1,24 @@
-id: FIRMIHIN_FOREST
+id: DIKSAM_PLATEAU
 type: BIOME
 extends:
   - COLOR_XERIC
   - ENVIRONMENT_LAND_DRY_WARM_SEMI_ARID
-  - EQ_MULTI_TERRACED_LAND
+  - EQ_ROCKY_BUTTES
   - CARVING_LAND
+  - ORES_EMERALD
+  - DEPOSITS_INFESTED
   - BASE
-color: $biomes/colors.yml:FIRMIHIN_FOREST
+color: $biomes/colors.yml:DIKSAM_PLATEAU
 
 vanilla: minecraft:desert
 
 tags:
-  - LAND_CAVES
-  - USE_DESERT_RIVER
+  - DEEP_DARK
 
 palette:
   - SOCOTRA: $meta.yml:top-y
-  - << meta.yml:palette-ocean-level-sand
   - << meta.yml:palette-underwater
   - << meta.yml:palette-bottom
-
-slant-depth: 5
 
 slant:
   - threshold: 0.8
@@ -41,7 +39,7 @@ features:
     - GRASS
     - DEAD_BUSHES
     - CACTUS_SPARSE
-    - DRY_GRASS
+    - DENSE_DRY_GRASS
   trees:
     - OAK_BUSHES
     - SPARSE_OAK_TREES

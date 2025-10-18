@@ -1,23 +1,26 @@
-id: XERIC_SHRUBLAND
+id: TAR_PITS
 type: BIOME
 extends:
   - COLOR_XERIC
   - ENVIRONMENT_LAND_DRY_WARM_SEMI_ARID
-  - EQ_MULTI_TERRACED_LAND
+  - EQ_BUTTES_ARCHIPELAGO
   - CARVING_LAND
   - BASE
-color: $biomes/colors.yml:XERIC_SHRUBLAND
+color: $biomes/colors.yml:TAR_PITS
 
-vanilla: minecraft:desert
+vanilla: minecraft:meadow
+
+colors:
+  water: 0x525457
+  water-fog: 0x525457
 
 tags:
   - LAND_CAVES
-  - USE_DESERT_RIVER
+  - USE_TAR_PIT_RIVER
 
 palette:
-  - XERIC: $meta.yml:top-y
-  - << meta.yml:palette-ocean-level-sand
-  - << meta.yml:palette-underwater
+  - GRASS: $meta.yml:top-y
+  - MUD: $meta.yml:ocean-level
   - << meta.yml:palette-bottom
 
 slant-depth: 5
@@ -25,12 +28,13 @@ slant-depth: 5
 slant:
   - threshold: 0.8
     palette:
-      - XERIC: $meta.yml:top-y
-      - << meta.yml:palette-underwater
+      - XERIC_MUD: $meta.yml:top-y
+      - MUD: $meta.yml:ocean-level
       - << meta.yml:palette-bottom
   - threshold: 0.4
     palette:
       - XERIC_SLANT: $meta.yml:top-y
+      - MUD: $meta.yml:ocean-level
       - << meta.yml:palette-bottom
 
 features:
@@ -39,11 +43,7 @@ features:
     - DEAD_BUSHES
     - POPPY_PATCH
     - DANDELION_PATCH
-    - CACTUS_SPARSE
   trees:
-    - OAK_BUSHES
-    - SPARSE_OAK_TREES
+    - PALM_TREES
     - MESQUITE_TREES
-    - DEAD_TREES_SPARSE
-    - SPARSE_FALLEN_OAK_TREES
-    - SPARSE_FALLEN_NORMAL_DARK_OAK_TREES
+    - SPARSE_FALLEN_PALM_TREES

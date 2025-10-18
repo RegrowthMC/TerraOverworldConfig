@@ -40,12 +40,21 @@ stages:
       TEMPERATE_MOUNTAINS:
         - SELF: 1
         - TEMPERATE_MOUNTAINS_RIVER: 1
+      HIGHLANDS:
+        - SELF: 1
+        - HIGHLANDS_RIVER: 1
       MOUNTAINS:
         - SELF: 1
         - MOUNTAINS_RIVER: 1
       XERIC_MOUNTAINS:
         - SELF: 1
         - XERIC_MOUNTAINS_RIVER: 1
+      RED_XERIC_MOUNTAINS:
+        - SELF: 1
+        - RED_XERIC_MOUNTAINS_RIVER: 1
+      ORANGE_XERIC_MOUNTAINS:
+        - SELF: 1
+        - ORANGE_XERIC_MOUNTAINS_RIVER: 1
       BADLANDS:
         - SELF: 1
         - BADLANDS_RIVER: 1
@@ -73,14 +82,31 @@ stages:
     from: USE_DESERT_RIVER
     to:
       - SELF: 1
-      - DESERT_RIVER: 1
+      - GALLERY_FOREST: 1
+      - DESERT_RIVER: 2
     sampler: *riverSampler
   # Red desert rivers
   - type: REPLACE
     from: USE_RED_DESERT_RIVER
     to:
       - SELF: 1
-      - RED_DESERT_RIVER: 1
+      - GALLERY_FOREST: 1
+      - RED_DESERT_RIVER: 2
+    sampler: *riverSampler
+  # Orange desert rivers
+  - type: REPLACE
+    from: USE_ORANGE_DESERT_RIVER
+    to:
+      - SELF: 1
+      - GALLERY_FOREST: 1
+      - ORANGE_DESERT_RIVER: 2
+    sampler: *riverSampler
+  # Tar pit rivers
+  - type: REPLACE
+    from: USE_TAR_PIT_RIVER
+    to:
+      - SELF: 1
+      - TAR_PIT_RIVER: 1
     sampler: *riverSampler
   # Regular rivers with temperate marshes
   - type: REPLACE
@@ -130,7 +156,8 @@ stages:
     from: USE_TROPICAL_RIVER
     to:
       - SELF: 1
-      - TROPICAL_RIVER: 1
+      - GALLERY_FOREST: 1
+      - TROPICAL_RIVER: 2
     sampler: *riverSampler
   # Tropical coastal rivers with mangrove swamps
   - type: REPLACE

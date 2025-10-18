@@ -5,7 +5,7 @@ extends:
   - EQ_LAND
   - CARVING_LAND
   - BASE
-color: $biomes/colors.yml:COLD_STEPPE
+color: $biomes/colors.yml:DRY_FIR_FIELDS
 
 tags:
   - LAND_CAVES
@@ -18,7 +18,6 @@ colors:
 
 palette:
   - STONY_GRASS: $meta.yml:top-y
-  - << meta.yml:palette-ocean-level-sand
   - << meta.yml:palette-underwater
   - << meta.yml:palette-bottom
 

@@ -2,7 +2,7 @@ id: SWAMP
 type: BIOME
 extends:
   - ENVIRONMENT_LAND_MARITIME_WET
-  - EQ_SWAMP
+  - EQ_MANGROVE_SWAMP
   - CARVING_OCEAN
   - BASE
 color: $biomes/colors.yml:SWAMP
@@ -28,6 +28,7 @@ slant:
   - threshold: 0.4
     palette:
       - GRASS_MUDDY: $meta.yml:top-y
+      - << meta.yml:palette-underwater
       - << meta.yml:palette-bottom
 
 slant-depth: 1

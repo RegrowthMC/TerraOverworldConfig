@@ -1,4 +1,4 @@
-id: PALM_FOREST
+id: DRY_PALM_FOREST
 type: BIOME
 extends:
   - COLOR_XERIC
@@ -6,21 +6,20 @@ extends:
   - EQ_BUTTES
   - CARVING_LAND
   - BASE
-color: $biomes/colors.yml:DRY_WOODLANDS
+color: $biomes/colors.yml:DRY_PALM_FOREST
 
 vanilla: minecraft:savanna
 
 tags:
   - LAND_CAVES
-  - USE_LUKEWARM_RIVER
+  - USE_DESERT_RIVER
 
 palette:
   - SANDY_GRASS: $meta.yml:top-y
-  - << meta.yml:palette-ocean-level-sand
   - << meta.yml:palette-underwater
   - << meta.yml:palette-bottom
 
-slant-depth: 1
+slant-depth: 4
 
 slant:
   - threshold: 0.8
@@ -38,7 +37,7 @@ slant:
       - << meta.yml:palette-bottom
   - threshold: 0.4
     palette:
-      - BLOCK:minecraft:stone: $meta.yml:top-y
+      - SAND_SLANT: $meta.yml:top-y
       - << meta.yml:palette-bottom
 
 features:

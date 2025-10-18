@@ -5,7 +5,7 @@ extends:
   - EQ_MULTI_TERRACED_LAND
   - CARVING_LAND
   - BASE
-color: $biomes/colors.yml:BROADLEAF_FOREST
+color: $biomes/colors.yml:AZALEA_FOREST
 
 tags:
   - LAND_CAVES
@@ -21,7 +21,7 @@ colors:
 
 palette:
   - GRASS: $meta.yml:top-y
-  - << meta.yml:palette-ocean-level-sand
+  - GRASS_MOSSY: 90
   - << meta.yml:palette-underwater
   - << meta.yml:palette-bottom
 
@@ -56,6 +56,8 @@ features:
   trees:
     - DENSE_AZALEA_TREE_PATCHES
     - SUBTROPICAL_BUSHES
+    - SPARSE_DARK_OAK_TREE_PATCHES
+    - SPARSE_FALLEN_DARK_OAK_TREES
   landforms:
     - MOSSY_BOULDERS
     - SMALL_MOSSY_BOULDER_PATCHES

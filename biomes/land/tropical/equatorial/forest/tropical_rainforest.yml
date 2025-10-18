@@ -5,7 +5,7 @@ extends:
   - EQ_LAND
   - CARVING_LAND
   - BASE
-color: $biomes/colors.yml:JUNGLE
+color: $biomes/colors.yml:TROPICAL_RAINFOREST
 
 vanilla: minecraft:jungle
 
@@ -22,7 +22,6 @@ tags:
 palette:
   - GRASS: $meta.yml:top-y
   - SANDY_GRASS: ${meta.yml:ocean-level} + 4
-  - << meta.yml:palette-ocean-level-sand
   - << meta.yml:palette-underwater
   - << meta.yml:palette-bottom
 

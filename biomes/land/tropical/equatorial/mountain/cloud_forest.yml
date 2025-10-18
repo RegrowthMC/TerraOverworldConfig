@@ -7,7 +7,7 @@ extends:
   - ORES_EMERALD
   - DEPOSITS_INFESTED
   - BASE
-color: $biomes/colors.yml:OVERGROWN_CLIFFS
+color: $biomes/colors.yml:CLOUD_FOREST
 
 vanilla: minecraft:jungle
 
@@ -25,7 +25,6 @@ colors:
 
 palette:
   - GRASS: $meta.yml:top-y
-  - << meta.yml:palette-ocean-level-sand
   - << meta.yml:palette-underwater
   - << meta.yml:palette-bottom
 
